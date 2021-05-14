@@ -17,7 +17,7 @@
 
 ##### General procedure for pairwise genome comparison
 
-Step1: minimap2 pairwise alignment:
+##Step1 alignment: minimap2 pairwise alignment:
 ref, query are input fa sequences, and chr is chromosome number, output is $paf_file
 ```
 sh minimap2_alignment.sh $ref $query $chr
