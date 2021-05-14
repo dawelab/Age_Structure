@@ -4,8 +4,6 @@
 3. [SV characterization](#sv-characterization)
 4. [Plot](#plot)
 
-## Steps
-
 ##### Tools used for SV calling and alignment plotting
 - Alignment
     * minimap2 (2.17)
