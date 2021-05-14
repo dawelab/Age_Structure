@@ -4,7 +4,7 @@
 3. [SV characterization](#sv-characterization)
 4. [Plot](#plot)
 
-##### Tools used for SV calling and alignment plotting
+## Tools used for SV calling and alignment plotting
 - Alignment
     * minimap2 (2.17)
 - Chaining and SV calling
@@ -13,7 +13,7 @@
     * karyoploteR
     * ggplot2
 
-##### General procedure for pairwise genome comparison
+## General procedure for pairwise genome comparison
 
 ## Alignment
 Step1: minimap2 pairwise alignment:
