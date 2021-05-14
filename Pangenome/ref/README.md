@@ -1,4 +1,4 @@
-## Tools used for SV calling and alignment plotting
+## Tools used for Pangenome calculation and plotting
 - Pangenome calculation
     * Anaconda3 (2020.02)
 - Plot
