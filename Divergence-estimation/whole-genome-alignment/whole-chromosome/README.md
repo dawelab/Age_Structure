@@ -9,7 +9,7 @@
     * karyoploteR
 
 ## SNP calling
-`paftools_sv_call_ref.sh` performs SNP and indel calling with paftools through processing alignments in PAF format (https://github.com/lh3/minimap2/blob/master/misc/README.md)
+`paftools_sv_call_ref.sh` performs SNP and indel calling with paftools through processing alignments in PAF format (https://github.com/lh3/minimap2/blob/master/misc/README.md). This script was executed for each syntenic aligned regions between ref and query by python script `snp_dating4.py`. 
 ```
 #!/bin/bash
 chr="$1"
