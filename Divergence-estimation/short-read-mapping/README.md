@@ -45,6 +45,7 @@ do
   file_name=$prefix.P39.div_cal.sh;
   snp_file=$(ls ${wdir}/*.P39.flt.snps.bed)
   sh div_cal.sh' $file $snp_file $ref
+done
 ```
 
 ## Plot
