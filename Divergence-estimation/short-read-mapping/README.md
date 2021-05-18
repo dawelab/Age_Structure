@@ -51,7 +51,7 @@ done
 ## Plot
 
 ```
-Rscript /home/jl03308/git/NAM_pancentromere/teosinte/snp_plot.normalized.R \
+Rscript snp_plot.normalized.R \
 $wdir \
 $ref_gff  \
 $centromere_file \
