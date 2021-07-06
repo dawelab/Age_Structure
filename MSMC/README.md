@@ -79,7 +79,8 @@ done
 
 # Generate input files for msmc for one chromosome, and run MSMC2 (https://github.com/stschiff/msmc-tools)
 
-The mask files here are the syntenic unalignable regions identified through the SV calling step.
+The mask files here are the syntenic alignable regions identified through the SV calling step.
+The `nonUMR_gene.bed` file is used for excluding SNPs located in functional regions.
 
 ```
 ml msmc/2.1.2-GCC-8.3.0
@@ -110,6 +111,7 @@ python ~/msmc-tools/generate_multihetsep.py --chr $chr \
 --mask /scratch/jl03308/NAM_pancentromere/pairwise_NAM_SV/${chr}/${line23}.mask.bed  \
 --mask /scratch/jl03308/NAM_pancentromere/pairwise_NAM_SV/${chr}/${line24}.mask.bed \
 --mask /scratch/jl03308/NAM_pancentromere/pairwise_NAM_SV/${chr}/${line25}.mask.bed \
+--mask /scratch/jl03308/NAM_pancentromere/pairwise_NAM_SV/breakpoint_analysis/allele_frequency/${ref}.${chr}.nonUMR_gene.bed \
 ${wdir}/${line1}.${chr}.syn.phased.recode.vcf.gz \
 ${wdir}/${line2}.${chr}.syn.phased.recode.vcf.gz \
 ${wdir}/${line3}.${chr}.syn.phased.recode.vcf.gz \
@@ -232,6 +234,7 @@ python ~/msmc-tools/generate_multihetsep.py --chr $chr \
     --mask ${vcf_dir}/${line24}/${line24}.mask.bed.gz \
     --mask ${vcf_dir}/${line25}/${line25}.mask.bed.gz \
     --mask ${vcf_dir}/${ref}/${ref}.mask.bed.gz \
+    --mask /scratch/jl03308/NAM_pancentromere/pairwise_NAM_SV/breakpoint_analysis/allele_frequency/${ref}.${chr}.nonUMR_gene.bed \
     ${wdir}/${line1}.${chr}.q20.flt.phased.recode.vcf.gz \
     ${wdir}/${line2}.${chr}.q20.flt.phased.recode.vcf.gz \
     ${wdir}/${line3}.${chr}.q20.flt.phased.recode.vcf.gz \
