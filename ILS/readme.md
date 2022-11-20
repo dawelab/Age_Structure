@@ -1,3 +1,4 @@
+### Pseudocode for LIS implementation in alignment chaining
 ## LIS algorithm
 - Input: Array A of integers, length n 
   * In the alignment context, array A stores the starting coordinate of each query alignment in minimap2 output
