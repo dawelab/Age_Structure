@@ -1,0 +1,24 @@
+LIS algorithm
+Input: List A of integers, length n
+Create array L and set L[1] = 1.
+Create array prev and set prev[j] = NULL for all j.
+for j = 2, . . . , n do
+Set L[j] = 1.
+for i = 1, . . . , j − 1 do
+if A[i] ≤ A[j] and L[j] < L[i] + 1 then
+Set L[j] = L[i] + 1.
+Set prev[j] = i.
+end if
+end for
+end for
+Let j = arg maxj L[j].
+14: Return L[j] along with Reconstruct-LIS(j).
+Reconstruct-LIS
+
+Create empty list S.
+Add A[j] to S.
+Let j = j
+while prev[j] is not NULL do
+Let j =prev[j].
+Add A[j] to the beginning of S.
+end while
