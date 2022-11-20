@@ -1,5 +1,5 @@
 ## LIS algorithm
-- Input: List A of integers, length n
+- Input: Array A of integers, length n 
 - Create array L and set L[1] = 1.
 - Create array prev and set prev[j] = NULL for all j.
 - for j = 2, . . . , n do
