@@ -36,9 +36,13 @@ python chaining.py \
  -o $aligned_file
 ```
 ## SV characterization
-aligned_file is output of chaining, selected_aligned_file is upon filtering inversions/tranlocations by a 20Kb cutoff,
-ref_chrsize and query_chrsize are chromosome size (bp), sv_file is the output file which summarizes sv and rearrangements,
-unaligned_file is the pairwise unalignment result (SV final result), fig_file summarizes the SV distribution
+Input files:
+1. aligned_file: output of chaining 
+Output files:
+1. selected_aligned_file: alignment files filtered by size 
+2. sv_file: the output file which summarizes sv and rearrangements,
+3. unaligned_file: the pairwise unalignment result (SV final result) 
+4. fig_file: SV distribution summary
 ```
 python sv_detect.py \
 -i $aligned_file -a $selected_aligned_file -gs1 $ref_chrsize -gs2 $query_chrsize -s $sv_file -o $unaligned_file -f $fig_file
