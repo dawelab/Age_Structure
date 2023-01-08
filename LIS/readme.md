@@ -1,4 +1,5 @@
-### Pseudocode for LIS implementation in alignment chaining
+## Pseudocode for LIS implementation in alignment chaining
+### This algorithm was implemented in the chaining.py in the SV calling section and separated out here to explain the details. 
 ## LIS algorithm
 - Input: Array A of integers, length n 
   * In the alignment context, array A stores the starting coordinate of each query alignment in minimap2 output
