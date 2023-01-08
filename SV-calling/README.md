@@ -36,9 +36,10 @@ python chaining.py \
  -o $aligned_file
 ```
 ## SV characterization
-Input files:
+### Input files:
 1. aligned_file: output of chaining 
-Output files:
+
+### Output files:
 1. selected_aligned_file: alignment files filtered by size 
 2. sv_file: the output file which summarizes sv and rearrangements,
 3. unaligned_file: the pairwise unalignment result (SV final result) 
