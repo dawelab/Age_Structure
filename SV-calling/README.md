@@ -9,8 +9,8 @@
  - 2.1 Pairwise syntenically aligned regions across NAM lines (Output of alignment chaining; 325 pairwise comparisons for each chromosome) are in files: NAM.chrx.pairwise.syn.bed.gz 
  - 2.2 Tandem duplications, inversions and translocations (Output of SV characterization; 325 pairwise comparisons for each chromosome) are in files: NAM.chrx.pairwise.sv.bed.gz 
       - The cols in NAM.chrx.pairwise.syn.bed.gz are: ref_genome, ref_start,ref_end, query_genome, query_start,query_end, alignment_orientation, alignment_length. The cols in NAM.chrx.pairwise.sv.bed.gz are: ref_genome, ref_start,ref_end, query_genome, query_start,query_end, sv_type (tandemdup_q indicates tandem duplication in query while tandemdup_r represents tandem duplication in reference genome).
-  
-
+3. LIS details 
+- psuedocode and python implementation of LIS algorithm implementation 
 ## Workflow for SV calling and plotting 
 1. [Alignment](#alignment)
 2. [Chaining](#chaining)
