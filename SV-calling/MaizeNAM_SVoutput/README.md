@@ -1,4 +1,5 @@
 ## Pairwise alignment among NAM lines across 10 chromosomes  
+#### Files could be used for similarity/dissimilarity calculation, classfication of NAM lines in defined regions, and TE-SV comparisons.
 ### syn.bed
 - Pairwise syntenically aligned regions across NAM lines (Output of alignment chaining; 325 pairwise comparisons for each chromosome) are in files: NAM.chrx.pairwise.syn.bed.gz 
 ### sv.bed
